@@ -1,14 +1,14 @@
 import './App.css';
-import Login from './component/Login/Login';
+// import Login from './component/Login/Login';
 import Navbar from './component/Navbar/Navbar';
-import Sidebar from './component/sidebar/sidebar';
+import Home from './component/home/Home';
 
 function App() {
   return (
     <>
         {/* <Login /> */}
        <Navbar /> 
-       <Sidebar />
+       <Home />
     </>
   );
 }

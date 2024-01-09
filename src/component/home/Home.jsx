@@ -1,11 +1,15 @@
 import React from 'react'
 import Sidebar from '../sidebar/sidebar'
-
+import Chart from '../chart/Chart'
+import "./home.css"
 const Home = () => {
   return (
-    <div>
+    <div className='home-container'>
         <Sidebar />
-    </div>
+        <div className='content-container'>
+        <Chart />
+        </div>
+        </div>
   )
 }
 

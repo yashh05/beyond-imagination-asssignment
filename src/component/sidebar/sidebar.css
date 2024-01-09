@@ -1,8 +1,8 @@
 .sidebar-container{
-    height: calc(100% - 70px);
+    height: calc(100vh - 120px);
     background-color: slategray;
-    position: absolute;
     width: 19%;
+    flex: 1;
     padding-top: 50px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
    width: 100%;
    text-align: center;
    padding: 5px;
-   font-size: 30px;
+   font-size: 22px;
    color: rgb(46, 45, 45);
    /* background-color: rgb(226, 226, 226); */
    color: white;
