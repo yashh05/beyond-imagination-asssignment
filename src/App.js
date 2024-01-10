@@ -1,15 +1,19 @@
-import './App.css';
-// import Login from './component/Login/Login';
-import Navbar from './component/Navbar/Navbar';
-import Home from './component/home/Home';
+import "./App.css";
+import Layout from "./Layout";
+import Login from './component/Login/Login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NotFound from "./component/notFound/NotFound";
 
 function App() {
+
   return (
-    <>
-        {/* <Login /> */}
-       <Navbar /> 
-       <Home />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Layout />} />
+      <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
