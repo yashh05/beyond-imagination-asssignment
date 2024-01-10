@@ -21,3 +21,29 @@
 .divider{
     margin-top: 10px;
 }
+
+@media (max-width:600px){
+    .chart-container h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .chart-container{
+        width: 85%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px 10px;
+      }
+    .parameter-details{
+       width: 25%;
+    }
+    .parameter-details h5{
+        font-size: 10px;
+    }
+    .parameter-title{
+        width: 25%;
+        font-size: 10px;
+    }    
+    .pie-chart{
+        flex: 1;
+    }
+}

@@ -37,8 +37,8 @@ const Chart = () => {
         <h1>Loading...</h1>
       ) : (
         <div>
-           <div className="parameter-indicators">
-          <h4>Gender</h4>
+          <div className="parameter-indicators">
+          <h4 className="parameter-title">Gender</h4>
           <div className="pie-chart">
             <PieChart
               data={[
@@ -62,7 +62,7 @@ const Chart = () => {
               animationEasing="ease-out"
             />
           </div>
-          <div>
+          <div className="parameter-details">
             <h5>Total users-{data.length}</h5>
             <h5>Male-{maleCount}</h5>
             <h5>Female-{data.length - maleCount}</h5>
@@ -70,7 +70,7 @@ const Chart = () => {
         </div>
         <hr className="divider" />
         <div className="parameter-indicators">
-          <h4>Gmail Holders</h4>
+          <h4 className="parameter-title">Gmail Holders</h4>
           <div className="pie-chart">
             <PieChart
               data={[
@@ -94,7 +94,7 @@ const Chart = () => {
               animationEasing="ease-out"
             />
           </div>
-          <div>
+          <div className="parameter-details">
             <h5>Total users-{data.length}</h5>
             <h5>Gmail Account Holders -{googlePercent}</h5>
             <h5>Others-{data.length - googlePercent}</h5>

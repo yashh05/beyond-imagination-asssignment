@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 #logo img{
     height: 40px;
@@ -40,7 +41,7 @@ a{
     padding: 10px 15px;
     font-size: 18px;
     text-transform: uppercase;
-    /* cursor: pointer; */
+    cursor: pointer;
     background-color: transparent;
     color:rgb(46, 45, 45);
     border: none;
@@ -83,13 +84,15 @@ a{
     }
     
     #right-nav{
-        gap: 15px;
-        font-size: 15px;
+        gap: 8px;
+    }
+    #right-nav h3{
+        font-size: 12px;
     }
     
     #right-nav button{
         padding: 8px 12px;
-        font-size: 15px;
+        font-size: 12px;
     }
     
 }

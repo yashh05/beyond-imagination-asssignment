@@ -4,3 +4,9 @@
 .content-container{
     flex: 4;
 }
+
+@media (max-width:600px){
+    .content-container{
+        flex: 1;
+    }
+}
