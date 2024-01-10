@@ -17,19 +17,21 @@ const UserState = ({ children }) => {
   }
 
   function loadCredentials() {
-    const newP= new Promise(function(resolve,reject){
-        if (!localStorage.getItem("username") || !localStorage.getItem("password") ) {
-            logout();
-            resolve(false);
-          } else {
-            const username = localStorage.getItem("username");
-            const password = localStorage.getItem("password");
-            setState({ loggedin: true, username, password });
-            resolve(true)
-          }
-    })
+    const newP = new Promise(function (resolve, reject) {
+      if (
+        !localStorage.getItem("username") ||
+        !localStorage.getItem("password")
+      ) {
+        logout();
+        resolve(false);
+      } else {
+        const username = localStorage.getItem("username");
+        const password = localStorage.getItem("password");
+        setState({ loggedin: true, username, password });
+        resolve(true);
+      }
+    });
     return newP;
-    
   }
 
   function logout() {

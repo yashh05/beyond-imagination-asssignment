@@ -6,7 +6,6 @@
     height: 70px;
     box-shadow: 0px 16px 25px 4px rgba(0, 0, 0, 0.2);
     color:rgb(46, 45, 45);
-
 }
 #logo{
     display: flex;
@@ -68,3 +67,29 @@ a{
     left: 0;
 }
 
+@media (max-width:600px){
+    .navbar-container{
+        padding: 0px 15px;
+        height: 70px;
+    }
+    #logo{
+        gap: 7px;
+    }
+    #logo img{
+        height: 30px;
+    }
+    #nav-title{
+       font-size: 24px;
+    }
+    
+    #right-nav{
+        gap: 15px;
+        font-size: 15px;
+    }
+    
+    #right-nav button{
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+    
+}
